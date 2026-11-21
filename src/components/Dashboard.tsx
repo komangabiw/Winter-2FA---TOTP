@@ -152,11 +152,10 @@ export const Dashboard: React.FC = () => {
         <div className="flex items-center gap-2.5">
           <button
             onClick={() => setShowSecretForm(!showSecretForm)}
-            className={`flex-1 py-2 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition cursor-pointer border ${
-              showSecretForm
-                ? 'bg-indigo-600 text-white border-indigo-500 shadow-md shadow-indigo-600/30'
-                : 'bg-slate-900/80 hover:bg-slate-800 text-slate-200 border-slate-800 hover:border-slate-700'
-            }`}
+            className={`flex-1 py-2 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition cursor-pointer border ${showSecretForm
+              ? 'bg-indigo-600 text-white border-indigo-500 shadow-md shadow-indigo-600/30'
+              : 'bg-slate-900/80 hover:bg-slate-800 text-slate-200 border-slate-800 hover:border-slate-700'
+              }`}
           >
             <KeyRound className="w-4 h-4 text-indigo-400" />
             <span>Isi Secret</span>
